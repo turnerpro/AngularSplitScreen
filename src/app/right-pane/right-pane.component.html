@@ -1,0 +1,5 @@
+<label>Right Pane URL: <label>
+<input type="text" name="rightPaneURL" id="rightPaneURL" [(ngModel)]="rightPaneURLValue" />
+<button type="submit" class="btn btn-default" (click)=updateSrc(rightPaneURLValue)>Load URL</button>
+<iframe id="rightPaneIframe" name="rightPaneIframe" [src]="currentURL" width="100%" height="600px"></iframe>
+<p>{{ rightPaneURLValue }}</p>
