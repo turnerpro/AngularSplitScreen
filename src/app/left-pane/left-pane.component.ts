@@ -15,6 +15,7 @@ export class LeftPaneComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.currentURL = this.sanitizer.bypassSecurityTrustResourceUrl('http://nfl.com')
   }
 
   loadLeftURL(leftPaneURLValue) {
